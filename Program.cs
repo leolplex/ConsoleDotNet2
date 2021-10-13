@@ -8,6 +8,7 @@ namespace ConsoleDotNet2
         static void Main(string[] args)
         {
             var server = WireMockServer.Start();
+            server.WithMapping();
             Console.WriteLine("Hello World!");
         }
     }
